@@ -12,13 +12,15 @@ static GBitmap *s_background_bitmap, *s_bt_icon_bitmap;
 *////////////////////////////////////////////////////////////
 bool hourlyVibeIsEnabled = false;
 bool useOldFont = false;
+bool init_wf = false;
 
 static void bluetooth_callback(bool connected) {
   // Show icon if disconnected
   layer_set_hidden(bitmap_layer_get_layer(s_bt_icon_layer), connected);
 
   // Issue a vibrating alert
-  vibes_double_pulse();
+  if ((init_wf && !connected) || !init_wf)
+    vibes_double_pulse();
 }
 
 static void handle_minute_tick(struct tm *tick_time, TimeUnits units_changed) 
@@ -130,7 +132,9 @@ static void main_window_load(Window *window)
   layer_add_child(window_get_root_layer(window), bitmap_layer_get_layer(s_bt_icon_layer));
 
   // Show the correct state of the BT connection from the start
+  init_wf = true;
   bluetooth_callback(connection_service_peek_pebble_app_connection());
+  init_wf = false;
 }
 
 static void main_window_unload(Window *window) 

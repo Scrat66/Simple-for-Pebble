@@ -1169,193 +1169,195 @@ LOAD /home/raph/softs/pebble-dev/pebble-sdk-4.2-linux64/arm-cs-tools/bin/../lib/
  .note.gnu.build-id
                 0x0000000000000084       0x24 linker stubs
 
-.text           0x00000000000000a8      0x65d
+.text           0x00000000000000a8      0x67d
  *(.text)
  .text          0x00000000000000a8       0x14 /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
  *(.text.*)
  .text.bluetooth_callback
-                0x00000000000000bc       0x20 src/simple.c.16.o
+                0x00000000000000bc       0x30 src/simple.c.16.o
  .text.handle_minute_tick
-                0x00000000000000dc       0xd8 src/simple.c.16.o
+                0x00000000000000ec       0xd8 src/simple.c.16.o
  .text.main_window_unload
-                0x00000000000001b4       0x4c src/simple.c.16.o
+                0x00000000000001c4       0x4c src/simple.c.16.o
  .text.main_window_load
-                0x0000000000000200      0x264 src/simple.c.16.o
+                0x0000000000000210      0x274 src/simple.c.16.o
  .text.startup.main
-                0x0000000000000464       0xa4 src/simple.c.16.o
-                0x0000000000000464                main
+                0x0000000000000484       0xa4 src/simple.c.16.o
+                0x0000000000000484                main
  .text.app_event_loop
-                0x0000000000000508        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x0000000000000508                app_event_loop
+                0x0000000000000528        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x0000000000000528                app_event_loop
  .text.bitmap_layer_create
-                0x0000000000000514        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x0000000000000514                bitmap_layer_create
+                0x0000000000000534        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x0000000000000534                bitmap_layer_create
  .text.bitmap_layer_destroy
-                0x0000000000000520        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x0000000000000520                bitmap_layer_destroy
+                0x0000000000000540        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x0000000000000540                bitmap_layer_destroy
  .text.bitmap_layer_get_layer
-                0x000000000000052c        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x000000000000052c                bitmap_layer_get_layer
+                0x000000000000054c        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x000000000000054c                bitmap_layer_get_layer
  .text.bitmap_layer_set_bitmap
-                0x0000000000000538        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x0000000000000538                bitmap_layer_set_bitmap
+                0x0000000000000558        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x0000000000000558                bitmap_layer_set_bitmap
  .text.clock_is_24h_style
-                0x0000000000000544        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x0000000000000544                clock_is_24h_style
+                0x0000000000000564        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x0000000000000564                clock_is_24h_style
  .text.fonts_load_custom_font
-                0x0000000000000550        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x0000000000000550                fonts_load_custom_font
+                0x0000000000000570        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x0000000000000570                fonts_load_custom_font
  .text.gbitmap_create_with_resource
-                0x000000000000055c        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x000000000000055c                gbitmap_create_with_resource
+                0x000000000000057c        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x000000000000057c                gbitmap_create_with_resource
  .text.gbitmap_destroy
-                0x0000000000000568        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x0000000000000568                gbitmap_destroy
+                0x0000000000000588        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x0000000000000588                gbitmap_destroy
  .text.layer_add_child
-                0x0000000000000574        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x0000000000000574                layer_add_child
+                0x0000000000000594        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x0000000000000594                layer_add_child
  .text.layer_set_hidden
-                0x0000000000000580        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x0000000000000580                layer_set_hidden
- .text.memmove  0x000000000000058c        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x000000000000058c                memmove
- .text.memset   0x0000000000000598        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x0000000000000598                memset
+                0x00000000000005a0        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x00000000000005a0                layer_set_hidden
+ .text.memmove  0x00000000000005ac        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x00000000000005ac                memmove
+ .text.memset   0x00000000000005b8        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x00000000000005b8                memset
  .text.resource_get_handle
-                0x00000000000005a4        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x00000000000005a4                resource_get_handle
+                0x00000000000005c4        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x00000000000005c4                resource_get_handle
  .text.strftime
-                0x00000000000005b0        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x00000000000005b0                strftime
+                0x00000000000005d0        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x00000000000005d0                strftime
  .text.tick_timer_service_subscribe
-                0x00000000000005bc        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x00000000000005bc                tick_timer_service_subscribe
+                0x00000000000005dc        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x00000000000005dc                tick_timer_service_subscribe
  .text.tick_timer_service_unsubscribe
-                0x00000000000005c8        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x00000000000005c8                tick_timer_service_unsubscribe
+                0x00000000000005e8        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x00000000000005e8                tick_timer_service_unsubscribe
  .text.vibes_double_pulse
-                0x00000000000005d4        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x00000000000005d4                vibes_double_pulse
+                0x00000000000005f4        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x00000000000005f4                vibes_double_pulse
  .text.window_create
-                0x00000000000005e0        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x00000000000005e0                window_create
+                0x0000000000000600        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x0000000000000600                window_create
  .text.window_destroy
-                0x00000000000005ec        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x00000000000005ec                window_destroy
+                0x000000000000060c        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x000000000000060c                window_destroy
  .text.window_get_root_layer
-                0x00000000000005f8        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x00000000000005f8                window_get_root_layer
+                0x0000000000000618        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x0000000000000618                window_get_root_layer
  .text.window_set_window_handlers
-                0x0000000000000604        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x0000000000000604                window_set_window_handlers
+                0x0000000000000624        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x0000000000000624                window_set_window_handlers
  .text.window_stack_push
-                0x0000000000000610        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x0000000000000610                window_stack_push
+                0x0000000000000630        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x0000000000000630                window_stack_push
  .text.window_set_background_color
-                0x000000000000061c        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x000000000000061c                window_set_background_color
+                0x000000000000063c        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x000000000000063c                window_set_background_color
  .text.localtime
-                0x0000000000000628        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x0000000000000628                localtime
+                0x0000000000000648        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x0000000000000648                localtime
  .text.text_layer_create
-                0x0000000000000634        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x0000000000000634                text_layer_create
+                0x0000000000000654        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x0000000000000654                text_layer_create
  .text.text_layer_destroy
-                0x0000000000000640        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x0000000000000640                text_layer_destroy
+                0x0000000000000660        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x0000000000000660                text_layer_destroy
  .text.text_layer_get_layer
-                0x000000000000064c        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x000000000000064c                text_layer_get_layer
+                0x000000000000066c        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x000000000000066c                text_layer_get_layer
  .text.text_layer_set_background_color
-                0x0000000000000658        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x0000000000000658                text_layer_set_background_color
+                0x0000000000000678        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x0000000000000678                text_layer_set_background_color
  .text.text_layer_set_font
-                0x0000000000000664        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x0000000000000664                text_layer_set_font
+                0x0000000000000684        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x0000000000000684                text_layer_set_font
  .text.text_layer_set_text
-                0x0000000000000670        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x0000000000000670                text_layer_set_text
+                0x0000000000000690        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x0000000000000690                text_layer_set_text
  .text.text_layer_set_text_alignment
-                0x000000000000067c        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x000000000000067c                text_layer_set_text_alignment
+                0x000000000000069c        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x000000000000069c                text_layer_set_text_alignment
  .text.text_layer_set_text_color
-                0x0000000000000688        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x0000000000000688                text_layer_set_text_color
- .text.time     0x0000000000000694        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x0000000000000694                time
+                0x00000000000006a8        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x00000000000006a8                text_layer_set_text_color
+ .text.time     0x00000000000006b4        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x00000000000006b4                time
  .text.connection_service_peek_pebble_app_connection
-                0x00000000000006a0        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x00000000000006a0                connection_service_peek_pebble_app_connection
+                0x00000000000006c0        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x00000000000006c0                connection_service_peek_pebble_app_connection
  .text.connection_service_subscribe
-                0x00000000000006ac        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
-                0x00000000000006ac                connection_service_subscribe
+                0x00000000000006cc        0xc /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+                0x00000000000006cc                connection_service_subscribe
  *(.rodata)
- .rodata        0x00000000000006b8       0x38 src/simple.c.16.o
+ .rodata        0x00000000000006d8       0x38 src/simple.c.16.o
  *(.rodata*)
  .rodata.str1.1
-                0x00000000000006f0       0x15 src/simple.c.16.o
+                0x0000000000000710       0x15 src/simple.c.16.o
 
-.glue_7         0x0000000000000708        0x0
+.glue_7         0x0000000000000728        0x0
  .glue_7        0x0000000000000000        0x0 linker stubs
 
-.glue_7t        0x0000000000000708        0x0
+.glue_7t        0x0000000000000728        0x0
  .glue_7t       0x0000000000000000        0x0 linker stubs
 
-.vfp11_veneer   0x0000000000000708        0x0
+.vfp11_veneer   0x0000000000000728        0x0
  .vfp11_veneer  0x0000000000000000        0x0 linker stubs
 
-.v4_bx          0x0000000000000708        0x0
+.v4_bx          0x0000000000000728        0x0
  .v4_bx         0x0000000000000000        0x0 linker stubs
 
-.iplt           0x0000000000000708        0x0
+.iplt           0x0000000000000728        0x0
  .iplt          0x0000000000000000        0x0 /home/raph/softs/pebble-dev/pebble-sdk-4.2-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
 
-.rel.dyn        0x0000000000000708        0x0
+.rel.dyn        0x0000000000000728        0x0
  .rel.iplt      0x0000000000000000        0x0 /home/raph/softs/pebble-dev/pebble-sdk-4.2-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
 
-.data           0x0000000000000708       0x1e
+.data           0x0000000000000728       0x1e
  *(.data)
- .data          0x0000000000000708        0x0 /home/raph/softs/pebble-dev/pebble-sdk-4.2-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crti.o
- .data          0x0000000000000708        0x4 /home/raph/softs/pebble-dev/pebble-sdk-4.2-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
-                0x0000000000000708                __dso_handle
- .data          0x000000000000070c        0x0 src/simple.c.16.o
- .data          0x000000000000070c        0x0 aplite/appinfo.auto.c.16.o
- .data          0x000000000000070c        0x0 /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
- .data          0x000000000000070c        0x0 /home/raph/softs/pebble-dev/pebble-sdk-4.2-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
- .data          0x000000000000070c        0x0 /home/raph/softs/pebble-dev/pebble-sdk-4.2-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtn.o
+ .data          0x0000000000000728        0x0 /home/raph/softs/pebble-dev/pebble-sdk-4.2-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crti.o
+ .data          0x0000000000000728        0x4 /home/raph/softs/pebble-dev/pebble-sdk-4.2-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+                0x0000000000000728                __dso_handle
+ .data          0x000000000000072c        0x0 src/simple.c.16.o
+ .data          0x000000000000072c        0x0 aplite/appinfo.auto.c.16.o
+ .data          0x000000000000072c        0x0 /home/raph/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp8J753Spebble.o)
+ .data          0x000000000000072c        0x0 /home/raph/softs/pebble-dev/pebble-sdk-4.2-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
+ .data          0x000000000000072c        0x0 /home/raph/softs/pebble-dev/pebble-sdk-4.2-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtn.o
  *(.data.*)
- .data.s_time_text.7418
-                0x000000000000070c        0x6 src/simple.c.16.o
- .data.s_date1_text.7417
-                0x0000000000000712        0xb src/simple.c.16.o
- .data.s_date2_text.7419
-                0x000000000000071d        0x9 src/simple.c.16.o
+ .data.s_date2_text.7420
+                0x000000000000072c        0x9 src/simple.c.16.o
+ .data.s_date1_text.7418
+                0x0000000000000735        0xb src/simple.c.16.o
+ .data.s_time_text.7419
+                0x0000000000000740        0x6 src/simple.c.16.o
 
-.igot.plt       0x0000000000000728        0x0
+.igot.plt       0x0000000000000748        0x0
  .igot.plt      0x0000000000000000        0x0 /home/raph/softs/pebble-dev/pebble-sdk-4.2-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
 
-.bss            0x0000000000000728       0x1c
+.bss            0x0000000000000748       0x1d
  *(.bss)
  *(.bss.*)
  .bss.hourlyVibeIsEnabled
-                0x0000000000000728        0x1 src/simple.c.16.o
-                0x0000000000000728                hourlyVibeIsEnabled
+                0x0000000000000748        0x1 src/simple.c.16.o
+                0x0000000000000748                hourlyVibeIsEnabled
  .bss.useOldFont
-                0x0000000000000729        0x1 src/simple.c.16.o
-                0x0000000000000729                useOldFont
- *fill*         0x000000000000072a        0x2 
+                0x0000000000000749        0x1 src/simple.c.16.o
+                0x0000000000000749                useOldFont
+ *fill*         0x000000000000074a        0x2 
  .bss.s_date1_layer
-                0x000000000000072c        0x4 src/simple.c.16.o
+                0x000000000000074c        0x4 src/simple.c.16.o
  .bss.s_bt_icon_layer
-                0x0000000000000730        0x4 src/simple.c.16.o
+                0x0000000000000750        0x4 src/simple.c.16.o
  .bss.s_time_layer
-                0x0000000000000734        0x4 src/simple.c.16.o
+                0x0000000000000754        0x4 src/simple.c.16.o
  .bss.s_date2_layer
-                0x0000000000000738        0x4 src/simple.c.16.o
+                0x0000000000000758        0x4 src/simple.c.16.o
  .bss.s_bt_icon_bitmap
-                0x000000000000073c        0x4 src/simple.c.16.o
+                0x000000000000075c        0x4 src/simple.c.16.o
  .bss.s_main_window
-                0x0000000000000740        0x4 src/simple.c.16.o
+                0x0000000000000760        0x4 src/simple.c.16.o
+ .bss.init_wf   0x0000000000000764        0x1 src/simple.c.16.o
+                0x0000000000000764                init_wf
 
 DISCARD
  libc.a(*)
@@ -1388,9 +1390,9 @@ OUTPUT(/home/raph/dev/pebble/Simple-for-Pebble/build/aplite/pebble-app.elf elf32
  .comment       0x0000000000000000       0x4f aplite/appinfo.auto.c.16.o
  .comment       0x0000000000000000       0x4f /home/raph/softs/pebble-dev/pebble-sdk-4.2-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
 
-.debug_info     0x0000000000000000     0x1393
- .debug_info    0x0000000000000000     0x102f src/simple.c.16.o
- .debug_info    0x000000000000102f      0x364 aplite/appinfo.auto.c.16.o
+.debug_info     0x0000000000000000     0x13a4
+ .debug_info    0x0000000000000000     0x1040 src/simple.c.16.o
+ .debug_info    0x0000000000001040      0x364 aplite/appinfo.auto.c.16.o
 
 .debug_abbrev   0x0000000000000000      0x345
  .debug_abbrev  0x0000000000000000      0x2a7 src/simple.c.16.o
@@ -1408,14 +1410,14 @@ OUTPUT(/home/raph/dev/pebble/Simple-for-Pebble/build/aplite/pebble-app.elf elf32
 .debug_ranges   0x0000000000000000       0x30
  .debug_ranges  0x0000000000000000       0x30 src/simple.c.16.o
 
-.debug_line     0x0000000000000000      0x492
- .debug_line    0x0000000000000000      0x34d src/simple.c.16.o
- .debug_line    0x000000000000034d      0x145 aplite/appinfo.auto.c.16.o
+.debug_line     0x0000000000000000      0x49d
+ .debug_line    0x0000000000000000      0x358 src/simple.c.16.o
+ .debug_line    0x0000000000000358      0x145 aplite/appinfo.auto.c.16.o
 
-.debug_str      0x0000000000000000      0xa5d
- .debug_str     0x0000000000000000      0x83b src/simple.c.16.o
-                                        0x8ab (size before relaxing)
- .debug_str     0x000000000000083b      0x222 aplite/appinfo.auto.c.16.o
+.debug_str      0x0000000000000000      0xa65
+ .debug_str     0x0000000000000000      0x843 src/simple.c.16.o
+                                        0x8b3 (size before relaxing)
+ .debug_str     0x0000000000000843      0x222 aplite/appinfo.auto.c.16.o
                                         0x44c (size before relaxing)
 
 .debug_frame    0x0000000000000000       0xa0

@@ -28,6 +28,11 @@
                 "file": "fonts/System San Francisco Display Thin.ttf",
                 "name": "SAN_FRANCISCO_THIN_18",
                 "type": "font"
+            },
+            {
+                "file": "images/bt-icon.png",
+                "name": "IMAGE_BT_ICON",
+                "type": "bitmap"
             }
         ]
     },

@@ -2,7 +2,8 @@
 
 static Window *s_main_window;
 static TextLayer *s_date1_layer, *s_date2_layer, *s_time_layer;
-
+static BitmapLayer *s_background_layer, *s_bt_icon_layer;
+static GBitmap *s_background_bitmap, *s_bt_icon_bitmap;
 /*///////////////////////////////////////////////////////////
 //
 // CHANGE "hourlyVibeIsEnabled" TO TRUE TO ADD HOURLY VIBES
@@ -10,7 +11,15 @@ static TextLayer *s_date1_layer, *s_date2_layer, *s_time_layer;
 //
 *////////////////////////////////////////////////////////////
 bool hourlyVibeIsEnabled = false;
-bool useOldFont = true;
+bool useOldFont = false;
+
+static void bluetooth_callback(bool connected) {
+  // Show icon if disconnected
+  layer_set_hidden(bitmap_layer_get_layer(s_bt_icon_layer), connected);
+
+  // Issue a vibrating alert
+  vibes_double_pulse();
+}
 
 static void handle_minute_tick(struct tm *tick_time, TimeUnits units_changed) 
 {	
@@ -25,7 +34,7 @@ static void handle_minute_tick(struct tm *tick_time, TimeUnits units_changed)
 	}
 	else
 	{
-		strftime(s_date1_text, sizeof(s_date1_text), "%A %e", tick_time);
+		strftime(s_date1_text, sizeof(s_date1_text), "%a %e", tick_time);
 	}
 	strftime(s_date2_text, sizeof(s_date2_text), "%b %Y", tick_time);
 	
@@ -111,6 +120,17 @@ static void main_window_load(Window *window)
 	text_layer_set_text_alignment(s_date2_layer, GTextAlignmentCenter);
   layer_add_child(window_layer, text_layer_get_layer(s_date2_layer));
 	}
+
+  // Create the Bluetooth icon GBitmap
+  s_bt_icon_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_BT_ICON);
+
+  // Create the BitmapLayer to display the GBitmap
+  s_bt_icon_layer = bitmap_layer_create(GRect(59, 12, 30, 30));
+  bitmap_layer_set_bitmap(s_bt_icon_layer, s_bt_icon_bitmap);
+  layer_add_child(window_get_root_layer(window), bitmap_layer_get_layer(s_bt_icon_layer));
+
+  // Show the correct state of the BT connection from the start
+  bluetooth_callback(connection_service_peek_pebble_app_connection());
 }
 
 static void main_window_unload(Window *window) 
@@ -118,6 +138,8 @@ static void main_window_unload(Window *window)
   text_layer_destroy(s_date1_layer);
 	text_layer_destroy(s_date2_layer);
   text_layer_destroy(s_time_layer);
+  gbitmap_destroy(s_bt_icon_bitmap);
+  bitmap_layer_destroy(s_bt_icon_layer);
 }
 
 static void init() 
@@ -137,6 +159,10 @@ static void init()
   time_t now = time(NULL);
   struct tm *t = localtime(&now);
   handle_minute_tick(t, MINUTE_UNIT);
+
+  connection_service_subscribe((ConnectionHandlers) {
+    .pebble_app_connection_handler = bluetooth_callback
+  });
 }
 
 static void deinit()
